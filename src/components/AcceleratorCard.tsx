@@ -15,7 +15,7 @@ export function AcceleratorCard({ title, description, status, personas, onLaunch
   const isLive = status === "Live";
 
   return (
-    <Card className="group relative overflow-hidden backdrop-blur-[20px] bg-glass border-glass shadow-glass hover:shadow-lg transition-all duration-300 hover:scale-[1.02] h-full flex flex-col">
+    <Card className="group relative overflow-hidden bg-white border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] h-full flex flex-col">
       <CardHeader className="bg-gradient-primary text-white relative pb-4">
         <div className="absolute top-3 right-3">
           <Badge 

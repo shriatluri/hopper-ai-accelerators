@@ -76,15 +76,15 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-background">
       {/* Header */}
-      <header className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-primary opacity-20"></div>
-        <div className="relative backdrop-blur-glass bg-glass border-b border-glass">
+      <header className="relative overflow-hidden bg-white shadow-sm">
+        <div className="absolute inset-0 bg-gradient-primary opacity-5"></div>
+        <div className="relative">
           <div className="container mx-auto px-6 py-8">
             <div className="flex items-center gap-4">
               <img 
                 src={hopperLogo} 
                 alt="Hopper Logo" 
-                className="h-16 w-16 rounded-xl shadow-glass"
+                className="h-16 w-16 rounded-xl shadow-lg"
               />
               <div>
                 <h1 className="text-4xl font-bold text-primary mb-2">

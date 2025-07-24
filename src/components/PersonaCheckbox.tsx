@@ -51,10 +51,10 @@ export function PersonaCheckbox({ id, label, description, checked, onCheckedChan
           <div 
             className={`
               flex items-center space-x-3 p-3 rounded-lg cursor-pointer transition-all duration-200
-              backdrop-blur-sm border border-glass hover:border-primary/50
+              backdrop-blur-sm border hover:border-primary/30
               ${checked 
-                ? 'bg-primary/20 border-primary shadow-md' 
-                : 'bg-glass hover:bg-glass/80'
+                ? 'bg-primary/10 border-primary/30 shadow-sm' 
+                : 'bg-white/70 border-gray-200 hover:bg-primary/5'
               }
               group hover:scale-105
             `}
