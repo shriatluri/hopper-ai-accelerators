@@ -63,6 +63,27 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-secondary': 'var(--gradient-secondary)',
+				'gradient-background': 'var(--gradient-background)',
+			},
+			backgroundColor: {
+				'glass': 'var(--glass-background)',
+			},
+			borderColor: {
+				'glass': 'var(--glass-border)',
+			},
+			textColor: {
+				'primary': 'var(--text-primary)',
+				'secondary': 'var(--text-secondary)',
+			},
+			boxShadow: {
+				'glass': 'var(--shadow-glass)',
+			},
+			backdropBlur: {
+				'glass': '20px',
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
