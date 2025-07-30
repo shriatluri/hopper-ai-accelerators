@@ -10,44 +10,44 @@ All colors MUST be HSL.
   :root {
     /* Modern Minimalist Color System */
     --background: 215 25% 27%; /* Dark grey background */
-    --foreground: 0 0% 95%; /* Light text */
+    --foreground: 0 0% 95%; /* Light text for dark background */
 
-    --card: 0 0% 100%; /* Pure white cards */
-    --card-foreground: 215 25% 27%; /* Dark text on cards */
+    --card: 220 14% 96%; /* Light grey cards instead of pure white */
+    --card-foreground: 215 25% 15%; /* Dark text on light cards */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 27%;
+    --popover: 220 14% 96%;
+    --popover-foreground: 215 25% 15%;
 
-    --primary: 42 96% 50%; /* Warm orange accent */
+    --primary: 210 98% 50%; /* Matte blue accent */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 13% 91%; /* Light grey */
-    --secondary-foreground: 215 25% 27%;
+    --secondary-foreground: 215 25% 15%;
 
-    --muted: 220 13% 95%; /* Very light grey */
+    --muted: 220 13% 93%; /* Very light grey */
     --muted-foreground: 215 16% 47%; /* Medium grey text */
 
-    --accent: 172 73% 44%; /* Teal accent */
+    --accent: 210 98% 40%; /* Darker matte blue */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%; /* Subtle borders */
-    --input: 220 13% 91%;
-    --ring: 42 96% 50%; /* Orange focus ring */
+    --border: 220 13% 87%; /* Subtle borders */
+    --input: 220 13% 87%;
+    --ring: 210 98% 50%; /* Blue focus ring */
 
     --radius: 0.75rem;
     
     /* Modern Design System */
-    --gradient-primary: linear-gradient(135deg, hsl(42, 96%, 50%), hsl(42, 96%, 60%));
-    --gradient-secondary: linear-gradient(135deg, hsl(172, 73%, 44%), hsl(172, 73%, 54%));
+    --gradient-primary: linear-gradient(135deg, hsl(210, 98%, 50%), hsl(210, 98%, 60%));
+    --gradient-secondary: linear-gradient(135deg, hsl(210, 98%, 40%), hsl(210, 98%, 50%));
     --gradient-background: linear-gradient(135deg, hsl(215, 25%, 27%), hsl(215, 25%, 32%));
-    --surface-elevated: hsl(0, 0%, 100%);
-    --surface-subtle: hsl(220, 13%, 98%);
-    --text-primary: hsl(0, 0%, 95%);
-    --text-secondary: hsl(215, 16%, 65%);
-    --text-on-card: hsl(215, 25%, 27%);
+    --surface-elevated: hsl(220, 14%, 96%); /* Light grey elevated surfaces */
+    --surface-subtle: hsl(220, 13%, 93%); /* Subtle grey background */
+    --text-primary: hsl(0, 0%, 95%); /* Light text for dark backgrounds */
+    --text-secondary: hsl(215, 16%, 65%); /* Secondary text */
+    --text-on-card: hsl(215, 25%, 15%); /* Dark text for light cards */
     --shadow-soft: 0 1px 3px hsla(215, 25%, 27%, 0.1);
     --shadow-medium: 0 4px 12px hsla(215, 25%, 27%, 0.15);
     --shadow-strong: 0 12px 24px hsla(215, 25%, 27%, 0.2);
