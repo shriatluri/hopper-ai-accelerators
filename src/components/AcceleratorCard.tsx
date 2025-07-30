@@ -15,12 +15,12 @@ export function AcceleratorCard({ title, description, status, personas, onLaunch
   const isLive = status === "Live";
 
   return (
-    <Card className="group relative overflow-hidden backdrop-blur-[20px] bg-glass border-glass shadow-glass hover:shadow-lg transition-all duration-300 hover:scale-[1.02] h-full flex flex-col">
+    <Card className="group relative overflow-hidden bg-surface-elevated border-border shadow-soft hover:shadow-medium transition-all duration-300 hover:scale-[1.02] h-full flex flex-col">
       <CardHeader className="bg-gradient-primary text-white relative pb-4">
         <div className="absolute top-3 right-3">
           <Badge 
             variant={isLive ? "default" : "secondary"}
-            className={isLive ? "bg-green-500 hover:bg-green-600" : "bg-orange-500 hover:bg-orange-600"}
+            className={isLive ? "bg-accent hover:bg-accent/90" : "bg-orange-500 hover:bg-orange-600"}
           >
             {status}
           </Badge>
@@ -37,14 +37,14 @@ export function AcceleratorCard({ title, description, status, personas, onLaunch
         </div>
       </CardHeader>
       <CardContent className="p-6 flex-1 flex flex-col">
-        <CardDescription className="text-card-foreground mb-4 flex-1">
+        <CardDescription className="text-on-card mb-4 flex-1">
           {description}
         </CardDescription>
         <div className="mb-4">
           <p className="text-sm text-muted-foreground mb-2">Relevant for:</p>
           <div className="flex flex-wrap gap-1">
             {personas.map((persona) => (
-              <Badge key={persona} variant="outline" className="text-xs">
+              <Badge key={persona} variant="outline" className="text-xs border-border text-muted-foreground">
                 {persona}
               </Badge>
             ))}
@@ -55,7 +55,7 @@ export function AcceleratorCard({ title, description, status, personas, onLaunch
           disabled={!isLive}
           className={`w-full transition-all duration-200 ${
             isLive 
-              ? "bg-gradient-primary hover:opacity-90 text-white shadow-md hover:shadow-lg" 
+              ? "bg-gradient-primary hover:opacity-90 text-white shadow-soft hover:shadow-medium" 
               : "bg-muted text-muted-foreground cursor-not-allowed"
           }`}
         >

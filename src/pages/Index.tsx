@@ -76,24 +76,21 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-background">
       {/* Header */}
-      <header className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-primary opacity-20"></div>
-        <div className="relative backdrop-blur-glass bg-glass border-b border-glass">
-          <div className="container mx-auto px-6 py-8">
-            <div className="flex items-center gap-4">
-              <img 
-                src={hopperLogo} 
-                alt="Hopper Logo" 
-                className="h-16 w-16 rounded-xl shadow-glass"
-              />
-              <div>
-                <h1 className="text-4xl font-bold text-primary mb-2">
-                  Welcome to Hopper.
-                </h1>
-                <p className="text-lg text-secondary">
-                  AI-Powered Data Accelerators Marketplace
-                </p>
-              </div>
+      <header className="bg-surface-elevated border-b border-border shadow-soft">
+        <div className="container mx-auto px-6 py-8">
+          <div className="flex items-center gap-4">
+            <img 
+              src={hopperLogo} 
+              alt="Hopper Logo" 
+              className="h-16 w-16 rounded-xl shadow-medium"
+            />
+            <div>
+              <h1 className="text-4xl font-bold text-on-card mb-2">
+                Welcome to Hopper.
+              </h1>
+              <p className="text-lg text-muted-foreground">
+                AI-Powered Data Accelerators Marketplace
+              </p>
             </div>
           </div>
         </div>
@@ -103,8 +100,8 @@ const Index = () => {
       <main className="container mx-auto px-6 py-12">
         {/* Persona Filter Section */}
         <div className="mb-12">
-          <div className="backdrop-blur-glass bg-glass border border-glass rounded-2xl p-8 shadow-glass">
-            <h2 className="text-2xl font-bold text-primary mb-6">
+          <div className="bg-surface-elevated border border-border rounded-2xl p-8 shadow-medium">
+            <h2 className="text-2xl font-bold text-on-card mb-6">
               Filter by Your Role
             </h2>
             
@@ -137,8 +134,8 @@ const Index = () => {
             </div>
             
             {/* Dynamic Description */}
-            <div className="bg-gradient-secondary bg-opacity-10 rounded-xl p-6 border border-glass">
-              <p className="text-secondary leading-relaxed">
+            <div className="bg-surface-subtle rounded-xl p-6 border border-border">
+              <p className="text-muted-foreground leading-relaxed">
                 {currentDescription}
               </p>
             </div>
@@ -166,7 +163,7 @@ const Index = () => {
 
           {filteredAccelerators.length === 0 && (
             <div className="text-center py-16">
-              <p className="text-xl text-secondary">
+              <p className="text-xl text-muted-foreground">
                 No accelerators found for the selected roles. Try selecting different personas.
               </p>
             </div>

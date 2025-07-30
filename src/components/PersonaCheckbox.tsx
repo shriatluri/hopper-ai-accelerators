@@ -50,11 +50,11 @@ export function PersonaCheckbox({ id, label, description, checked, onCheckedChan
         <TooltipTrigger asChild>
           <div 
             className={`
-              flex items-center space-x-3 p-3 rounded-lg cursor-pointer transition-all duration-200
-              backdrop-blur-sm border border-glass hover:border-primary/50
+              flex items-center space-x-3 p-4 rounded-xl cursor-pointer transition-all duration-200
+              border hover:border-primary/50 hover:shadow-soft
               ${checked 
-                ? 'bg-primary/20 border-primary shadow-md' 
-                : 'bg-glass hover:bg-glass/80'
+                ? 'bg-primary/10 border-primary shadow-soft' 
+                : 'bg-surface-elevated border-border hover:bg-surface-subtle'
               }
               group hover:scale-105
             `}
@@ -64,24 +64,24 @@ export function PersonaCheckbox({ id, label, description, checked, onCheckedChan
               id={id}
               checked={checked}
               onCheckedChange={onCheckedChange}
-              className="border-glass data-[state=checked]:bg-primary data-[state=checked]:border-primary"
+              className="border-border data-[state=checked]:bg-primary data-[state=checked]:border-primary"
             />
             <div className="flex items-center gap-2 flex-1">
               <IconComponent 
                 className={`h-4 w-4 transition-colors ${
-                  checked ? 'text-primary' : 'text-secondary'
+                  checked ? 'text-primary' : 'text-muted-foreground'
                 }`} 
               />
               <label
                 htmlFor={id}
                 className={`text-sm font-medium cursor-pointer transition-colors ${
-                  checked ? 'text-primary' : 'text-primary/80'
+                  checked ? 'text-on-card' : 'text-on-card/80'
                 }`}
               >
                 {label}
               </label>
             </div>
-            <Info className="h-3 w-3 text-secondary opacity-50 group-hover:opacity-100 transition-opacity" />
+            <Info className="h-3 w-3 text-muted-foreground opacity-50 group-hover:opacity-100 transition-opacity" />
           </div>
         </TooltipTrigger>
         <TooltipContent side="top" className="max-w-xs">

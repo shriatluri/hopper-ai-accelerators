@@ -8,45 +8,49 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 222 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Modern Minimalist Color System */
+    --background: 215 25% 27%; /* Dark grey background */
+    --foreground: 0 0% 95%; /* Light text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%; /* Pure white cards */
+    --card-foreground: 215 25% 27%; /* Dark text on cards */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 27%;
 
-    --primary: 258 90% 66%;
+    --primary: 42 96% 50%; /* Warm orange accent */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 220 13% 91%; /* Light grey */
+    --secondary-foreground: 215 25% 27%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 13% 95%; /* Very light grey */
+    --muted-foreground: 215 16% 47%; /* Medium grey text */
 
-    --accent: 258 90% 66%;
+    --accent: 172 73% 44%; /* Teal accent */
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 258 90% 66%;
+    --border: 220 13% 91%; /* Subtle borders */
+    --input: 220 13% 91%;
+    --ring: 42 96% 50%; /* Orange focus ring */
 
     --radius: 0.75rem;
     
-    /* Custom Design System */
-    --gradient-primary: linear-gradient(135deg, hsl(258, 90%, 66%), hsl(234, 84%, 68%));
-    --gradient-secondary: linear-gradient(135deg, hsl(234, 84%, 68%), hsl(258, 90%, 66%));
-    --gradient-background: linear-gradient(135deg, hsl(234, 50%, 15%), hsl(258, 50%, 20%));
-    --glass-background: hsla(0, 0%, 100%, 0.1);
-    --glass-border: hsla(0, 0%, 100%, 0.2);
-    --text-primary: hsl(0, 0%, 100%);
-    --text-secondary: hsl(210, 40%, 80%);
-    --shadow-glass: 0 8px 32px hsla(258, 90%, 66%, 0.15);
+    /* Modern Design System */
+    --gradient-primary: linear-gradient(135deg, hsl(42, 96%, 50%), hsl(42, 96%, 60%));
+    --gradient-secondary: linear-gradient(135deg, hsl(172, 73%, 44%), hsl(172, 73%, 54%));
+    --gradient-background: linear-gradient(135deg, hsl(215, 25%, 27%), hsl(215, 25%, 32%));
+    --surface-elevated: hsl(0, 0%, 100%);
+    --surface-subtle: hsl(220, 13%, 98%);
+    --text-primary: hsl(0, 0%, 95%);
+    --text-secondary: hsl(215, 16%, 65%);
+    --text-on-card: hsl(215, 25%, 27%);
+    --shadow-soft: 0 1px 3px hsla(215, 25%, 27%, 0.1);
+    --shadow-medium: 0 4px 12px hsla(215, 25%, 27%, 0.15);
+    --shadow-strong: 0 12px 24px hsla(215, 25%, 27%, 0.2);
 
     --sidebar-background: 0 0% 98%;
 

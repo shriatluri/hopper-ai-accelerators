@@ -69,20 +69,18 @@ export default {
 				'gradient-background': 'var(--gradient-background)',
 			},
 			backgroundColor: {
-				'glass': 'var(--glass-background)',
-			},
-			borderColor: {
-				'glass': 'var(--glass-border)',
+				'surface-elevated': 'var(--surface-elevated)',
+				'surface-subtle': 'var(--surface-subtle)',
 			},
 			textColor: {
 				'primary': 'var(--text-primary)',
 				'secondary': 'var(--text-secondary)',
+				'on-card': 'var(--text-on-card)',
 			},
 			boxShadow: {
-				'glass': 'var(--shadow-glass)',
-			},
-			backdropBlur: {
-				'glass': '20px',
+				'soft': 'var(--shadow-soft)',
+				'medium': 'var(--shadow-medium)',
+				'strong': 'var(--shadow-strong)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
