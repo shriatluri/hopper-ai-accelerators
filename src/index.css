@@ -9,7 +9,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Modern Minimalist Color System */
-    --background: 215 25% 27%; /* Dark grey background */
+    --background: 215 20% 15%; /* Charcoal black/grey background */
     --foreground: 0 0% 95%; /* Light text for dark background */
 
     --card: 220 14% 96%; /* Light grey cards */
@@ -18,7 +18,7 @@ All colors MUST be HSL.
     --popover: 220 14% 96%;
     --popover-foreground: 215 25% 10%;
 
-    --primary: 210 98% 50%; /* Matte blue accent */
+    --primary: 210 85% 35%; /* Darker blue accent */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 13% 91%; /* Light grey */
@@ -27,7 +27,7 @@ All colors MUST be HSL.
     --muted: 220 13% 93%; /* Very light grey */
     --muted-foreground: 215 25% 25%; /* Much darker for better contrast */
 
-    --accent: 210 98% 40%; /* Darker matte blue */
+    --accent: 210 85% 25%; /* Even darker blue */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -35,23 +35,23 @@ All colors MUST be HSL.
 
     --border: 220 13% 82%; /* More visible borders */
     --input: 220 13% 82%;
-    --ring: 210 98% 50%; /* Blue focus ring */
+    --ring: 210 85% 35%; /* Darker blue focus ring */
 
     --radius: 0.75rem;
     
     /* Modern Design System */
-    --gradient-primary: linear-gradient(135deg, hsl(210, 98%, 50%), hsl(210, 98%, 60%));
-    --gradient-secondary: linear-gradient(135deg, hsl(210, 98%, 40%), hsl(210, 98%, 50%));
-    --gradient-background: linear-gradient(135deg, hsl(215, 25%, 27%), hsl(215, 25%, 32%));
+    --gradient-primary: linear-gradient(135deg, hsl(210, 85%, 35%), hsl(210, 85%, 45%));
+    --gradient-secondary: linear-gradient(135deg, hsl(210, 85%, 25%), hsl(210, 85%, 35%));
+    --gradient-background: linear-gradient(135deg, hsl(215, 20%, 15%), hsl(215, 20%, 18%));
     --surface-elevated: hsl(220, 14%, 96%); /* Light grey elevated surfaces */
     --surface-subtle: hsl(220, 13%, 93%); /* Subtle grey background */
     --text-primary: hsl(0, 0%, 95%); /* Light text for dark backgrounds */
     --text-secondary: hsl(215, 16%, 65%); /* Secondary text */
     --text-on-card: hsl(215, 25%, 10%); /* Much darker text for light cards */
     --text-on-card-secondary: hsl(215, 25%, 35%); /* Secondary text on cards */
-    --shadow-soft: 0 1px 3px hsla(215, 25%, 27%, 0.1);
-    --shadow-medium: 0 4px 12px hsla(215, 25%, 27%, 0.15);
-    --shadow-strong: 0 12px 24px hsla(215, 25%, 27%, 0.2);
+    --shadow-soft: 0 1px 3px hsla(215, 20%, 15%, 0.2);
+    --shadow-medium: 0 4px 12px hsla(215, 20%, 15%, 0.25);
+    --shadow-strong: 0 12px 24px hsla(215, 20%, 15%, 0.3);
 
     --sidebar-background: 0 0% 98%;
 
