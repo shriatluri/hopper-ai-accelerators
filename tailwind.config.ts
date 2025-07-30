@@ -76,6 +76,7 @@ export default {
 				'primary': 'var(--text-primary)',
 				'secondary': 'var(--text-secondary)',
 				'on-card': 'var(--text-on-card)',
+				'on-card-secondary': 'var(--text-on-card-secondary)',
 			},
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',

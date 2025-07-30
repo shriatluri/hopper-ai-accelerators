@@ -12,20 +12,20 @@ All colors MUST be HSL.
     --background: 215 25% 27%; /* Dark grey background */
     --foreground: 0 0% 95%; /* Light text for dark background */
 
-    --card: 220 14% 96%; /* Light grey cards instead of pure white */
-    --card-foreground: 215 25% 15%; /* Dark text on light cards */
+    --card: 220 14% 96%; /* Light grey cards */
+    --card-foreground: 215 25% 10%; /* Much darker text on light cards */
 
     --popover: 220 14% 96%;
-    --popover-foreground: 215 25% 15%;
+    --popover-foreground: 215 25% 10%;
 
     --primary: 210 98% 50%; /* Matte blue accent */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 13% 91%; /* Light grey */
-    --secondary-foreground: 215 25% 15%;
+    --secondary-foreground: 215 25% 10%;
 
     --muted: 220 13% 93%; /* Very light grey */
-    --muted-foreground: 215 16% 47%; /* Medium grey text */
+    --muted-foreground: 215 25% 25%; /* Much darker for better contrast */
 
     --accent: 210 98% 40%; /* Darker matte blue */
     --accent-foreground: 0 0% 100%;
@@ -33,8 +33,8 @@ All colors MUST be HSL.
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 87%; /* Subtle borders */
-    --input: 220 13% 87%;
+    --border: 220 13% 82%; /* More visible borders */
+    --input: 220 13% 82%;
     --ring: 210 98% 50%; /* Blue focus ring */
 
     --radius: 0.75rem;
@@ -47,7 +47,8 @@ All colors MUST be HSL.
     --surface-subtle: hsl(220, 13%, 93%); /* Subtle grey background */
     --text-primary: hsl(0, 0%, 95%); /* Light text for dark backgrounds */
     --text-secondary: hsl(215, 16%, 65%); /* Secondary text */
-    --text-on-card: hsl(215, 25%, 15%); /* Dark text for light cards */
+    --text-on-card: hsl(215, 25%, 10%); /* Much darker text for light cards */
+    --text-on-card-secondary: hsl(215, 25%, 35%); /* Secondary text on cards */
     --shadow-soft: 0 1px 3px hsla(215, 25%, 27%, 0.1);
     --shadow-medium: 0 4px 12px hsla(215, 25%, 27%, 0.15);
     --shadow-strong: 0 12px 24px hsla(215, 25%, 27%, 0.2);

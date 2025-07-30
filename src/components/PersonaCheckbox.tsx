@@ -69,19 +69,19 @@ export function PersonaCheckbox({ id, label, description, checked, onCheckedChan
             <div className="flex items-center gap-2 flex-1">
               <IconComponent 
                 className={`h-4 w-4 transition-colors ${
-                  checked ? 'text-primary' : 'text-muted-foreground'
+                  checked ? 'text-primary' : 'text-on-card-secondary'
                 }`} 
               />
               <label
                 htmlFor={id}
                 className={`text-sm font-medium cursor-pointer transition-colors ${
-                  checked ? 'text-on-card' : 'text-on-card/80'
+                  checked ? 'text-on-card font-semibold' : 'text-on-card'
                 }`}
               >
                 {label}
               </label>
             </div>
-            <Info className="h-3 w-3 text-muted-foreground opacity-50 group-hover:opacity-100 transition-opacity" />
+            <Info className="h-3 w-3 text-on-card-secondary opacity-70 group-hover:opacity-100 transition-opacity" />
           </div>
         </TooltipTrigger>
         <TooltipContent side="top" className="max-w-xs">
