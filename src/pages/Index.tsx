@@ -38,15 +38,24 @@ const Index = () => {
     }
   };
 
-  // Filter accelerators based on selected personas
+  // Filter and sort accelerators: 'Live' first, then 'Coming Soon'
   const filteredAccelerators = useMemo(() => {
-    if (selectedPersonas.includes("All")) {
-      return accelerators;
-    }
-    
-    return accelerators.filter(accelerator =>
-      accelerator.personas.some(persona => selectedPersonas.includes(persona))
-    );
+    let filtered = selectedPersonas.includes("All")
+      ? accelerators
+      : accelerators.filter(accelerator =>
+          accelerator.personas.some(persona => selectedPersonas.includes(persona))
+        );
+
+    // Sort: 'Live' first, then 'Coming Soon', then others
+    filtered = [...filtered].sort((a, b) => {
+      const statusOrder = (status: string) => {
+        if (status === "Live") return 0;
+        if (status === "Coming Soon") return 1;
+        return 2;
+      };
+      return statusOrder(a.status) - statusOrder(b.status);
+    });
+    return filtered;
   }, [selectedPersonas]);
 
   // Generate dynamic description
