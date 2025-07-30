@@ -53,7 +53,7 @@ export function PersonaCheckbox({ id, label, description, checked, onCheckedChan
               flex items-center space-x-3 p-4 rounded-xl cursor-pointer transition-all duration-200
               border hover:border-primary/50 hover:shadow-soft
               ${checked 
-                ? 'bg-teal-selected border-primary shadow-soft' 
+                ? 'bg-primary/10 border-primary shadow-soft' 
                 : 'bg-surface-elevated border-border hover:bg-surface-subtle'
               }
               group hover:scale-105

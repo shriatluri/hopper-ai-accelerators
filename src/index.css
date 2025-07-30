@@ -8,53 +8,50 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Professional Data Marketplace Color System */
-    --background: 217 33% 17%; /* Dark charcoal #1f2937 */
+    /* Modern Minimalist Color System */
+    --background: 215 20% 15%; /* Charcoal black/grey background */
     --foreground: 0 0% 95%; /* Light text for dark background */
 
-    --card: 0 0% 100%; /* Clean white #ffffff */
-    --card-foreground: 217 19% 27%; /* Dark gray #374151 */
+    --card: 220 14% 96%; /* Light grey cards */
+    --card-foreground: 215 25% 10%; /* Much darker text on light cards */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 217 19% 27%;
+    --popover: 220 14% 96%;
+    --popover-foreground: 215 25% 10%;
 
-    --primary: 173 81% 32%; /* Modern teal #0d9488 */
+    --primary: 210 85% 35%; /* Darker blue accent */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 13% 91%; /* Light gray for borders */
-    --secondary-foreground: 217 19% 27%;
+    --secondary: 220 13% 91%; /* Light grey */
+    --secondary-foreground: 215 25% 10%;
 
-    --muted: 220 14% 96%; /* Very light gray #f3f4f6 */
-    --muted-foreground: 217 19% 45%; /* Medium gray #6b7280 */
+    --muted: 220 13% 93%; /* Very light grey */
+    --muted-foreground: 215 25% 25%; /* Much darker for better contrast */
 
-    --accent: 173 79% 26%; /* Darker teal #0f766e for hover */
+    --accent: 210 85% 25%; /* Even darker blue */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%; /* Subtle gray border #e5e7eb */
-    --input: 220 13% 91%;
-    --ring: 173 81% 32%; /* Teal focus ring */
+    --border: 220 13% 82%; /* More visible borders */
+    --input: 220 13% 82%;
+    --ring: 210 85% 35%; /* Darker blue focus ring */
 
     --radius: 0.75rem;
     
-    /* Professional Design System */
-    --gradient-primary: linear-gradient(135deg, hsl(173, 81%, 32%), hsl(173, 81%, 36%));
-    --gradient-secondary: linear-gradient(135deg, hsl(173, 79%, 26%), hsl(173, 81%, 32%));
-    --gradient-background: linear-gradient(135deg, hsl(217, 33%, 17%), hsl(217, 33%, 20%));
-    --surface-elevated: hsl(0, 0%, 100%); /* Clean white cards */
-    --surface-subtle: hsl(220, 14%, 96%); /* Light gray background */
+    /* Modern Design System */
+    --gradient-primary: linear-gradient(135deg, hsl(210, 85%, 35%), hsl(210, 85%, 45%));
+    --gradient-secondary: linear-gradient(135deg, hsl(210, 85%, 25%), hsl(210, 85%, 35%));
+    --gradient-background: linear-gradient(135deg, hsl(215, 20%, 15%), hsl(215, 20%, 18%));
+    --surface-elevated: hsl(220, 14%, 96%); /* Light grey elevated surfaces */
+    --surface-subtle: hsl(220, 13%, 93%); /* Subtle grey background */
     --text-primary: hsl(0, 0%, 95%); /* Light text for dark backgrounds */
-    --text-secondary: hsl(217, 19%, 65%); /* Secondary text on dark */
-    --text-on-card: hsl(217, 19%, 27%); /* Dark gray headings #374151 */
-    --text-on-card-secondary: hsl(217, 19%, 45%); /* Medium gray body text #6b7280 */
-    --teal-selected: hsl(166, 76%, 90%); /* Light teal background #ccfbf1 */
-    --badge-live: hsl(148, 76%, 39%); /* Bright green #10b981 */
-    --badge-coming-soon: hsl(43, 96%, 50%); /* Warm orange #f59e0b */
-    --shadow-soft: 0 1px 3px hsla(0, 0%, 0%, 0.1);
-    --shadow-medium: 0 4px 12px hsla(0, 0%, 0%, 0.15);
-    --shadow-strong: 0 12px 24px hsla(0, 0%, 0%, 0.2);
+    --text-secondary: hsl(215, 16%, 65%); /* Secondary text */
+    --text-on-card: hsl(215, 25%, 10%); /* Much darker text for light cards */
+    --text-on-card-secondary: hsl(215, 25%, 35%); /* Secondary text on cards */
+    --shadow-soft: 0 1px 3px hsla(215, 20%, 15%, 0.2);
+    --shadow-medium: 0 4px 12px hsla(215, 20%, 15%, 0.25);
+    --shadow-strong: 0 12px 24px hsla(215, 20%, 15%, 0.3);
 
     --sidebar-background: 0 0% 98%;
 
