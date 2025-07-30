@@ -78,6 +78,13 @@ export default {
 				'on-card': 'var(--text-on-card)',
 				'on-card-secondary': 'var(--text-on-card-secondary)',
 			},
+			backgroundColor: {
+				'surface-elevated': 'var(--surface-elevated)',
+				'surface-subtle': 'var(--surface-subtle)',
+				'teal-selected': 'var(--teal-selected)',
+				'badge-live': 'var(--badge-live)',
+				'badge-coming-soon': 'var(--badge-coming-soon)',
+			},
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',
 				'medium': 'var(--shadow-medium)',
