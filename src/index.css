@@ -18,7 +18,7 @@ All colors MUST be HSL.
     --popover: 220 14% 96%;
     --popover-foreground: 215 25% 10%;
 
-    --primary: 210 85% 35%; /* Darker blue accent */
+    --primary: 220 60% 20%; /* Navy blue */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 13% 91%; /* Light grey */
@@ -27,7 +27,7 @@ All colors MUST be HSL.
     --muted: 220 13% 93%; /* Very light grey */
     --muted-foreground: 215 25% 25%; /* Much darker for better contrast */
 
-    --accent: 210 85% 25%; /* Even darker blue */
+    --accent: 220 60% 15%; /* Even darker navy */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -35,13 +35,13 @@ All colors MUST be HSL.
 
     --border: 220 13% 82%; /* More visible borders */
     --input: 220 13% 82%;
-    --ring: 210 85% 35%; /* Darker blue focus ring */
+    --ring: 220 60% 20%; /* Navy blue focus ring */
 
     --radius: 0.75rem;
     
     /* Modern Design System */
-    --gradient-primary: linear-gradient(135deg, hsl(210, 85%, 35%), hsl(210, 85%, 45%));
-    --gradient-secondary: linear-gradient(135deg, hsl(210, 85%, 25%), hsl(210, 85%, 35%));
+    --gradient-primary: linear-gradient(135deg, hsl(220, 60%, 20%), hsl(220, 60%, 30%));
+    --gradient-secondary: linear-gradient(135deg, hsl(220, 60%, 15%), hsl(220, 60%, 20%));
     --gradient-background: linear-gradient(135deg, hsl(215, 20%, 15%), hsl(215, 20%, 18%));
     --surface-elevated: hsl(220, 14%, 96%); /* Light grey elevated surfaces */
     --surface-subtle: hsl(220, 13%, 93%); /* Subtle grey background */

@@ -20,7 +20,7 @@ export function AcceleratorCard({ title, description, status, personas, onLaunch
         <div className="absolute top-3 right-3">
           <Badge 
             variant={isLive ? "default" : "secondary"}
-            className={isLive ? "bg-accent hover:bg-accent/90" : "bg-orange-500 hover:bg-orange-600"}
+            className={isLive ? "bg-green-600 hover:bg-green-700 text-white" : "bg-orange-500 hover:bg-orange-600"}
           >
             {status}
           </Badge>
@@ -44,7 +44,7 @@ export function AcceleratorCard({ title, description, status, personas, onLaunch
           <p className="text-sm text-muted-foreground mb-2">Relevant for:</p>
           <div className="flex flex-wrap gap-1">
             {personas.map((persona) => (
-              <Badge key={persona} variant="outline" className="text-xs border-border text-muted-foreground">
+              <Badge key={persona} variant="outline" className="text-xs border-border text-muted-foreground bg-gray-200">
                 {persona}
               </Badge>
             ))}
@@ -56,7 +56,7 @@ export function AcceleratorCard({ title, description, status, personas, onLaunch
           className={`w-full transition-all duration-200 ${
             isLive 
               ? "bg-gradient-primary hover:opacity-90 text-white shadow-soft hover:shadow-medium" 
-              : "bg-muted text-muted-foreground cursor-not-allowed"
+              : "bg-gray-500 text-gray-100 cursor-not-allowed"
           }`}
         >
           {isLive ? "Launch" : "Coming Soon"}

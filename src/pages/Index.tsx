@@ -76,7 +76,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-background">
       {/* Header */}
-      <header className="bg-surface-elevated border-b border-border shadow-soft">
+         <header className="bg-gradient-background border-b border-border shadow-soft">
         <div className="container mx-auto px-6 py-8">
           <div className="flex items-center gap-4">
             <img 
@@ -85,10 +85,10 @@ const Index = () => {
               className="h-16 w-16 rounded-xl shadow-medium"
             />
             <div>
-              <h1 className="text-4xl font-bold text-on-card mb-2">
+              <h1 className="text-4xl font-bold text-white mb-2">
                 Welcome to Hopper.
               </h1>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-white">
                 AI-Powered Data Accelerators Marketplace
               </p>
             </div>
@@ -99,8 +99,8 @@ const Index = () => {
       {/* Main Content */}
       <main className="container mx-auto px-6 py-12">
         {/* Persona Filter Section */}
-        <div className="mb-12">
-          <div className="bg-surface-elevated border border-border rounded-2xl p-8 shadow-medium">
+        <div className="mb-16">
+             <div className="bg-gray-200 border border-border rounded-2xl p-8 shadow-medium">
             <h2 className="text-2xl font-bold text-on-card mb-6">
               Filter by Your Role
             </h2>
@@ -120,7 +120,7 @@ const Index = () => {
             </div>
             
             {/* Row 2 */}
-            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {row2Personas.map((persona) => (
                 <PersonaCheckbox
                   key={persona}
@@ -132,19 +132,12 @@ const Index = () => {
                 />
               ))}
             </div>
-            
-            {/* Dynamic Description */}
-            <div className="bg-surface-subtle rounded-xl p-6 border border-border">
-              <p className="text-muted-foreground leading-relaxed">
-                {currentDescription}
-              </p>
-            </div>
           </div>
         </div>
 
         {/* Accelerators Grid */}
         <div className="mb-8">
-          <h2 className="text-3xl font-bold text-primary mb-8 text-center">
+          <h2 className="text-3xl font-bold text-primary mb-16 text-center">
             Available Accelerators ({filteredAccelerators.length})
           </h2>
           
